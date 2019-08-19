@@ -1,0 +1,18 @@
+#include "stdafx.h"
+#include "helpers.hpp"
+
+// anykey ////////////////////////////////////////////////////////////////////
+
+#ifdef _DEBUG
+    #include <iostream>
+    void anykey()
+    {
+        getchar();
+    }
+
+#else
+
+    void anykey(){ /*DUMMY*/ }
+
+#endif
+//////////////////////////////////////////////////////////////////////////////
