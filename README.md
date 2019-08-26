@@ -53,7 +53,11 @@ Serial
 
     - DCB -- baudRate, Parity, StopBit, ...
     - COMMTIMEOUTS -- задержки между байтами при чтении/записи и структуру для описания размеров очередей
+    
+Структура для описани размера очередейэ
+
     - COMMQUEUESIZE -- размеры очередей приема и отправики данных
+  
   
 Можно конфигурировать скопом и поотдельности.
 
@@ -103,4 +107,7 @@ Serial
     p << buf;                           //p.write(buf)    
     p << 0xCA << 0xFE << 0xBA << 0xBE;  // warning C4309
     p << (char)0xCA << (char)0xFE << (char)0xBA << (char)0xBE;
+    
+    buf.clear()
+    p >> buf;
 ```    
